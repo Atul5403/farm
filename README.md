@@ -1,7 +1,7 @@
 # farm
 
-Get Started
+### Get Started
 
-clone
-npm install
+clone <br />
+npm install <br />
 npm start
