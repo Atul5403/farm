@@ -92,21 +92,22 @@ export default class Mole extends Component {
   }
 
   whack = () => {
-    if (!this.isPopping || this.isWhacked || this.isAttacking) {
-      return
-    }
+    console.log('hi')
+    // if (!this.isPopping || this.isWhacked || this.isAttacking) {
+    //   return
+    // }
 
-    if (this.actionTimeout) {
-      clearTimeout(this.actionTimeout)
-    }
+    // if (this.actionTimeout) {
+    //   clearTimeout(this.actionTimeout)
+    // }
 
-    this.isWhacked = true
-    this.isFeisty = false
+    // this.isWhacked = true
+    // this.isFeisty = false
 
-    this.props.onScore()
-    if (this.isHealing) {
-      this.props.onHeal()
-    }
+    // this.props.onScore()
+    // if (this.isHealing) {
+    //   this.props.onHeal()
+    // }
 
     this.mole.play({
       type: 'dizzy',
@@ -132,7 +133,7 @@ export default class Mole extends Component {
           source={Images.farm}
           columns={8}
           rows={6}
-          height={40} // set either, none, but not both
+          height={50} // set either, none, but not both
           // width={200}
           //width={100}
           // width={30}
@@ -140,8 +141,8 @@ export default class Mole extends Component {
             idle: [0],
             appear: [1, 2, 3, 4],
             hide: [4, 3, 2, 1, 0],
-            dizzy: [36, 37, 38],
-            faint: [42, 43, 44, 0],
+            dizzy: [1, 2, 3, 4],
+            faint: [42, 43, 44],
             attack: [11, 12, 13, 14, 15, 16],
             heal: [24, 25, 26, 27, 28, 29, 30, 31, 32, 33],
           }}

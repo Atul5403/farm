@@ -34,9 +34,9 @@ export default (styles = StyleSheet.create({
     borderWidth: 5,
     borderRadius: 10,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     width: Constants.YR * 350,
-    height: Constants.YR * 200,
+    height: Constants.YR * 500,
     marginTop: Constants.YR * -40,
   },
   panelTitle: {
